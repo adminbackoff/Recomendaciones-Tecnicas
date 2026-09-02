@@ -12,14 +12,16 @@
     --verde:  #9ABA31;
     --tinta:  #545454;
     --fondo:  #FDFDFD;
+    --pagina: #191919;
     --barra:  47px;
     --ancho:  480px;
   }
   *{ box-sizing:border-box; margin:0; padding:0; }
+  html, body{ width:100%; }
   body{ font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        background:var(--fondo); display:flex; align-items:flex-start; justify-content:center; padding:0; min-height:100vh; }
+        background:var(--pagina); display:flex; align-items:flex-start; justify-content:center; padding:0; min-height:100vh; }
 
-  .tarjeta{ position:relative; width:var(--ancho); background:var(--fondo);
+  .tarjeta{ position:relative; width:100%; max-width:var(--ancho); background:var(--fondo);
             padding:60px 22px 20px calc(var(--barra) + 16px); color:var(--tinta); overflow:hidden; }
 
   .barra{ position:absolute; left:0; top:0; bottom:0; width:var(--barra); background:var(--verde); }
